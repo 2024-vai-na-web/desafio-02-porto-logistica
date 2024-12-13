@@ -93,6 +93,7 @@ main {
 .hero {
   background: url('/img/hero.png') no-repeat center center;
   object-fit: cover;
+  margin-bottom: 23.5rem;
 
   &__wrapper {
     align-items: flex-start;
