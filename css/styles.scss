@@ -33,7 +33,6 @@ body {
 
   &__nav {
     display: flex;
-    justify-content: space-between;
 
     &-list {
       display: flex;
@@ -92,7 +91,47 @@ main {
 }
 
 .hero {
-  background-image: url('/img/hero.png');
-  object-fit: contain;
-  height: 63.4rem;
+  background: url('/img/hero.png') no-repeat center center;
+  object-fit: cover;
+
+  &__wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    height: 63.4rem;
+    justify-content: center;
+  }
+
+  &__title,
+  &__text,
+  &__buttom {
+    color: #FFF;
+    font-family: Oswald;
+    font-style: normal;
+    text-transform: capitalize;
+  }
+
+  &__title {
+    font-size: 9.6rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__text {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+  }
+
+  &__buttom {
+    background: #0016DF;
+    flex-shrink: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    height: 5.9rem;
+    line-height: normal;
+    margin-left: 2.5rem;
+    width: 25.1rem;
+  }
 }
