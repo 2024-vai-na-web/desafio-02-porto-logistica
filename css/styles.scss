@@ -3,16 +3,16 @@ body {
 }
 
 .wrapper {
-  max-width: 144rem;
+  margin: 0 auto;
+  max-width: 122.4rem;
 }
 
 .header {
   &__wrapper {
     align-items: center;
-    border: 1px solid red;
     display: flex;
-    height: 63.4px;
-    padding: 4.2rem 5rem 3.7rem 12.7rem;
+    justify-content: space-between;
+    padding: 4.2rem 0 3.7rem 0;
   }
 
   &__brand {
@@ -25,12 +25,19 @@ body {
     text-transform: capitalize;
   }
 
+  &__nav-buttom--wrapper {
+    align-items: center;
+    display: flex;
+    gap: 7rem;
+  }
+
   &__nav {
     display: flex;
     justify-content: space-between;
 
     &-list {
       display: flex;
+      justify-content: space-between;
       width: 32.5rem;
     }
 
@@ -46,28 +53,46 @@ body {
       font-weight: 500;
       line-height: normal;
       text-transform: capitalize;
+      transition: color .5s;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 
   &__buttom {
     align-items: center;
+    background-color: #FFF;
     border: 0.3rem solid #000;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    margin: 7.7rem;
     height: 7.6rem;
     width: 15.6rem;
+    color: #000;
+    font-family: Oswald;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    transition: background-color .5s, color .5s;
 
-
-    &-cta {
-      color: #000;
-      font-family: Oswald;
-      font-size: 2.4rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      text-transform: capitalize;
+    &:hover {
+      background-color: #000;
+      color: #FFF;
     }
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-image: url('/img/hero.png');
+  object-fit: contain;
+  height: 63.4rem;
 }
