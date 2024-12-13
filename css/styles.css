@@ -1,9 +1,63 @@
-h1 {
+body {
+  background-color: #FFF;
+}
+
+.wrapper {
+  max-width: 144rem;
+}
+
+.header__wrapper {
+  align-items: center;
+  border: 1px solid red;
+  display: flex;
+  height: 63.4px;
+  padding: 4.2rem 5rem 3.7rem 12.7rem;
+}
+.header__brand {
   color: #000;
   font-family: Oswald;
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav-list {
+  display: flex;
+  width: 32.5rem;
+}
+.header__nav-item {
+  display: flex;
+}
+.header__nav-link {
+  color: #5B5B5B;
+  font-family: Oswald;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.header__buttom {
+  align-items: center;
+  border: 0.3rem solid #000;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: 7.7rem;
+  height: 7.6rem;
+  width: 15.6rem;
+}
+.header__buttom-cta {
+  color: #000;
+  font-family: Oswald;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
 }/*# sourceMappingURL=styles.css.map */
